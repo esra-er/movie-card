@@ -1,0 +1,159 @@
+@import 'variables';
+
+$font-sizes: (
+    subtitle: 0.8,
+    title: 1.2,
+    text:1,
+    profile-info:0.8
+    );
+
+@each $key,$value in $font-sizes {
+    .card-#{$key} {
+        font-size: $value + rem;
+        margin-left: 0.5rem;
+    }
+}
+
+%card{
+display: $display;
+flex-direction: column;
+width: 18rem;
+height: 29rem;
+border-radius: 15px;
+background-color: white;
+margin:0 1.5rem;   
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container{
+    background-color: $color-1;
+    padding-top: 1rem;
+    height: 100vh;
+    header{
+        background-color: $color-3;
+        width: 70%;
+        height: 4rem;
+        display: $display;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 0  30px 0 30px;
+        margin: 0 auto;
+        .logo{
+            .word{
+                font-family: sans-serif;
+                font-weight: $weight;
+                font-size: 1.3rem;
+                .red{
+                    color:$color-2;    
+                }
+                .black{
+                    color: $color-5;
+                }
+            }
+            .word:hover{
+                transform: scale(1.3);
+                cursor: pointer; 
+            }
+        }
+        .photo{
+            img{
+                height: 1.8rem;
+            }
+        }
+        nav{
+            ul{
+                display: $display;
+                li{
+                    margin-right: 0.5rem;
+                    padding: 10px;
+                    
+                    a{
+                        font-family: sans-serif;
+                        text-decoration: none;
+                        color: $color-5;
+                    }
+                    
+                    .active:hover{
+                        color: $color-5;
+                    }
+                    
+                }
+                .active{
+                 background-color: $color-2;
+                 padding: 10px;
+                 border-radius: 15px;
+                 color: white;
+                }
+                .last{
+                    color: gray;
+                }  
+            }
+        }
+    }
+
+    main{
+        display: $display;
+        justify-content: $content;
+        padding: 5rem;
+        .card{
+             @extend %card;
+            .picture{
+                img{
+                    width: 18rem;
+                    height: 14rem;
+                    border-radius: 15px 15px 0 0;
+                }
+            }
+            .texts{
+                font-family: $font-stack;
+                .card-subtitle{
+                    background-color: $color-4;
+                    border-radius: 40px;
+                    text-align: center;
+                    margin: 0.5rem;
+                    padding: 0.3rem 0;
+                    font-weight: $weight;
+                }
+                .card-title{
+                    font-weight: $weight;
+                    margin: 0.5rem 1rem;
+                }
+                .card-text{
+                    margin-left: 1rem;
+                }
+            }
+            .card-profile{
+                display: $display;
+                font-family: $font-stack;
+                img{
+                    width: 2.5rem;
+                    height: 2.5rem;
+                    border-radius: 50%;
+                    margin: 1rem;
+                }
+                .profile-text{
+                    font-family: $font-stack;
+                    display: $display;
+                    flex-direction: column;
+                    justify-content: $content;
+                }
+                h5{
+                    margin-left: 0.5rem;
+                }
+                p{
+                    color: gray;
+                }
+            }
+        }
+        .card:hover{
+            box-shadow: $shadow ; 
+            }
+    }
+}

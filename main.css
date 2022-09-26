@@ -1,0 +1,147 @@
+.card-subtitle {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.card-profile-info {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+}
+
+.container main .card {
+  display: flex;
+  flex-direction: column;
+  width: 18rem;
+  height: 29rem;
+  border-radius: 15px;
+  background-color: white;
+  margin: 0 1.5rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.container {
+  background-color: #191919;
+  padding-top: 1rem;
+  height: 100vh;
+}
+.container header {
+  background-color: #CAC0C0;
+  width: 70%;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 0 30px 0 30px;
+  margin: 0 auto;
+}
+.container header .logo .word {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.container header .logo .word .red {
+  color: #F60506;
+}
+.container header .logo .word .black {
+  color: #000000;
+}
+.container header .logo .word:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+.container header .photo img {
+  height: 1.8rem;
+}
+.container header nav ul {
+  display: flex;
+}
+.container header nav ul li {
+  margin-right: 0.5rem;
+  padding: 10px;
+}
+.container header nav ul li a {
+  font-family: sans-serif;
+  text-decoration: none;
+  color: #000000;
+}
+.container header nav ul li .active:hover {
+  color: #000000;
+}
+.container header nav ul .active {
+  background-color: #F60506;
+  padding: 10px;
+  border-radius: 15px;
+  color: white;
+}
+.container header nav ul .last {
+  color: gray;
+}
+.container main {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+}
+.container main .card .picture img {
+  width: 18rem;
+  height: 14rem;
+  border-radius: 15px 15px 0 0;
+}
+.container main .card .texts {
+  font-family: Helvetica, sans-serif;
+}
+.container main .card .texts .card-subtitle {
+  background-color: #4D4E4D;
+  border-radius: 40px;
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.3rem 0;
+  font-weight: bold;
+}
+.container main .card .texts .card-title {
+  font-weight: bold;
+  margin: 0.5rem 1rem;
+}
+.container main .card .texts .card-text {
+  margin-left: 1rem;
+}
+.container main .card .card-profile {
+  display: flex;
+  font-family: Helvetica, sans-serif;
+}
+.container main .card .card-profile img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  margin: 1rem;
+}
+.container main .card .card-profile .profile-text {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container main .card .card-profile h5 {
+  margin-left: 0.5rem;
+}
+.container main .card .card-profile p {
+  color: gray;
+}
+.container main .card:hover {
+  box-shadow: 1px 1px 60px 12px rgba(255, 255, 255, 0.83);
+}/*# sourceMappingURL=main.css.map */
